@@ -1,7 +1,7 @@
 {
-  "name": "practica_12",
+  "name": "y",
   "version": "1.0.0",
-  "description": "",
+  "description": "��#\u0000 \u0000p\u0000r\u0000a\u0000c\u0000t\u0000i\u0000c\u0000a\u0000_\u00001\u00002\u0000\r\u0000 \u0000",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,5 +12,9 @@
   "dependencies": {
     "ejs": "^3.1.6",
     "express": "^4.17.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "npm i express"
   }
 }

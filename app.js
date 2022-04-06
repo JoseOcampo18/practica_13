@@ -18,11 +18,6 @@ app.get('/', function (req, res){ //Agregamos el link de referencia a donde se e
     res.render('index');
 });
 
-//segunda ruta /api, regresa un objeto JSON
-app.get('/api', function (req, res){
-    res.json({firstname: 'John', lastname: 'Doe'});
-});
-
 //Tercera ruta, recibe un parametro
 app.get('/person/:id', function (req, res) {
     res.render('person', {ID: req.params.id });
