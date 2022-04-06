@@ -3,20 +3,11 @@
         <link href="/assets/style.css" type="text/css" rel="stylesheet" />
     </head>
     <body>
-        <%if(ID % 2 == 0){%> <!-- Comparamos si el valor que recibido en la ruta (ID) es par -->
-            <h1>Numero par</h1>
-            <ul> <!-- Abrimos lista desordenada -->                
-                <%for(let i = 0; i < (ID * 2); i++){%> <!-- Imprimos el valor de ID y "ES PAR!" el doble de veces del valor de ID, a través de un ciclo for -->
-                    <li> <%= ID %> ES PAR!</li> <!-- Usamos los las etiquetas <%= %> cuando es un output es decir cuando se va a mostrar el valor -->
-                <%}%>
-            </ul>
-                <%}else{%> <!-- Indicamos que si no es par, la única otra opción es que el numero sea impar -->
-            <h1>Numero impar</h1>
-            <ul>
-                <%for(let i = 0; i < ID; i++){%>  <!-- Imprimimos el valor de ID y "ES IMPAR!" el numero de veces que indica el valor de ID -->
-                    <li> <%= ID %> ES IMPAR!</li> 
-                <%}%> <!-- Las etiquetas <% %> son scriplet tag, es decir solo para control de flujo, y no para output de valores -->
-            </ul>
-                <%}%>
+        <h1>Person: <%= ID %></h1>  <!-- Especifiacmos con los caracteres <%= %> que se va a recibir un valor especial de nombre ID,
+                                    al cual pasaremos a la vista utilizando un "route handler" -->
     </body>
 </html>
+
+<!-- linea 6:
+    Especifiacmos con los caracteres <%= %> que se va a recibir un valor especial de nombre ID,
+    al cual pasaremos a la vista utilizando un "route handler" -->
